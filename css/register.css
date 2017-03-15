@@ -1,0 +1,72 @@
+		.registerwrap{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 99;
+		}
+		.registerwrap .phonenum,.title{
+			border-bottom:1px solid gainsboro;
+		}
+		.registerwrap .main{
+			background: white;
+		}
+		
+		.registerwrap input{
+			border:none;
+			width:3.15rem;
+			height:0.5rem;
+			margin-left: 0.1rem;
+		}
+		.registerwrap .title{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 0.45rem;
+			font-size:0.18rem;
+		}
+		.registerwrap>div{
+		}
+		.registerwrap .bindinganotherway>div:first-child,.bindinganotherway>div:nth-child(3){			flex-grow:1;
+			border:0.0001px solid grey;
+		}
+		
+	.registerwrap .tel>div:first-child,.testphone>div:first-child{
+		
+		width:0.3rem;
+		line-height: 0.245rem;
+		/*margin-right: rem;*/
+		padding: 0.1275rem 0 0 0.2rem;
+	}
+	.registerwrap a,.items,.testn,.bindinganotherway{
+		color:grey;
+	}
+	.registerwrap .items{
+		display: flex;
+		margin: 0.15rem 0 0.3rem 0;
+	}
+	.registerwrap .tel,.testphone{
+		display:flex;
+	}
+	.registerwrap .verify{
+		width:100%;
+		height: 0.5rem;
+		color:white;
+		background:gainsboro;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.registerwrap .bindinganotherway{
+		width:100%;
+			margin-top:89%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	.registerwrap .wechat{
+		
+		margin-top:0.5%;
+		margin-left: 45%;
+	}

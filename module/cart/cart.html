@@ -1,0 +1,41 @@
+
+<div class="cart_in" ng-controller="cart" ng-show="{{goodList.length>0}}">
+	<header class="cat_in_header">
+		购物车({{resault.sum}})
+		<span>编辑</span>
+	</header>
+	<div  ng-repeat="item in goodList">
+	<div class="cat_in_div">
+		<span class="cat_in_span_2">{{item.country}}{{item.mail_name}}</span>
+	</div>
+	<ul class="cat_in_ul">
+		<li class="cat_in_span_9">
+			<span  ng-click="alonePrice(item)">√</span>
+			<dt><img src={{item.img}} alt=""></dt>
+			<dd>{{item.name}} </dd>
+			<dd></dd>
+			<dd>x<span>{{item.num}}</span></dd>
+			<dd>¥<span>{{item.price|number:"2"}}</span></dd>
+		</li>
+		<div class="cat_in_ul_div">
+			<span class="cat_in_ul_div_span1">共计</span><span  class="cat_in_ul_div_span2">¥{{item.price*item.num|number:"2"}}</span>
+		</div>
+	</ul>
+	</div>
+	<div class="cat_last_div">
+		<span class="cat_in_span_3" ng-click="allPrice()"></span>
+		<span class="cat_in_span_4">全选</span>
+		<p>合计:&nbsp;<span class="cat_in_span3">¥&nbsp;{{surePrice|number:2}}</span></p>
+		<span class="cat_in_span4 close">结算</span>
+	</div>
+</div>
+<div class="cart_null" ng-show="{{goodList.length==0}}">
+	<header class="cat_header">
+		购物车<span>(0)</span>
+		<img src="img/a.png" alt="">
+	</header>
+	<div class="cat_div">
+		<img src="img/mb.png" alt="">
+	</div>
+	<p class="cat_p">购物车空空如也, <span>前往</span>填满购物车</p>
+</div>

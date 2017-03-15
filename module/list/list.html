@@ -1,0 +1,30 @@
+<div style="font-size: 0.075rem;" ng-controller="mydatahotselling">
+	<div class="hot">
+		<div class="col1">
+			<div ng-repeat="n in hotsellinggoodslist|limitTo:11">
+				<img src="{{n.global_goods.selected_sku.image_url}}"/>
+				<div class="detail">
+				<div class="sale">2件减40元</div>
+				<div class="title">
+					{{n.global_goods.title}}
+				</div>
+				<div class="price">{{n.global_goods.selected_sku.native_price_unit}}{{n.global_goods.selected_sku.current_price_rmb}}</div>
+				<div class="direct_mail">{{n.global_goods.country}}直邮</div>
+				</div>
+			</div>
+		</div>
+		<div class="col2" >
+			<div ng-repeat="n in hotsellinggoodslist|limitTo:11-22">
+				<img src="{{n.global_goods.selected_sku.image_url}}"/>
+				<div class="detail">
+				<div class="sale">2件减40元</div>
+				<div class="title">
+					{{n.global_goods.title}}
+				</div>
+				<div class="price">{{n.global_goods.selected_sku.native_price_unit}}{{n.global_goods.selected_sku.current_price_rmb}}</div>
+				<div class="direct_mail">{{n.global_goods.country}}直邮</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
